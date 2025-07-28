@@ -1,0 +1,6 @@
+.{
+    .name = .usingnamespace,
+    .version = "0.15.0-dev.1232+869ef0060",
+    .paths = .{ "build.zig", "build.zig.zon" },
+    .fingerprint = 0xe9c33ff33f279e1c,
+}
