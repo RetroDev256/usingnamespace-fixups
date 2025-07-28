@@ -14,7 +14,7 @@ pub fn fixup(b: *std.Build, unprocessed: LazyPath) void {
     var allocating: Writer.Allocating = .init(b.allocator);
     defer allocating.deinit();
 
-    const file = try std.fs.cwd().openFile(
+    const file = try src_path.root_dir.handle.openFile(
         src_path.sub_path,
         .{ .mode = .read_write },
     );
